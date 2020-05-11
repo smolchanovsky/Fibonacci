@@ -4,6 +4,7 @@
         <TargetFramework>netcoreapp3.1</TargetFramework>
         <IsPackable>false</IsPackable>
         <LangVersion>8</LangVersion>
+        <Nullable>disable</Nullable>
     </PropertyGroup>
 
     <ItemGroup>
@@ -12,6 +13,10 @@
         <PackageReference Include="nunit" Version="3.12.0" />
         <PackageReference Include="NUnit3TestAdapter" Version="3.15.1" />
         <PackageReference Include="Microsoft.NET.Test.Sdk" Version="16.4.0" />
+    </ItemGroup>
+
+    <ItemGroup>
+      <ProjectReference Include="..\..\src\Fibonacci.Algorithms\Fibonacci.Algorithms.csproj" />
     </ItemGroup>
 
 </Project>
